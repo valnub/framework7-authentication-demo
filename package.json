@@ -1,0 +1,92 @@
+{
+  "name": "f7-auth",
+  "private": true,
+  "version": "1.0.0",
+  "description": "f7-auth",
+  "repository": "",
+  "license": "UNLICENSED",
+  "framework7": {
+    "cwd": "/Users/valmar/dev/youtube/f7-auth/live",
+    "type": [
+      "web"
+    ],
+    "name": "f7-auth",
+    "framework": "vue",
+    "template": "single-view",
+    "cssPreProcessor": false,
+    "bundler": "webpack",
+    "webpack": {
+      "developmentSourceMap": true,
+      "productionSourceMap": true,
+      "hashAssets": false,
+      "preserveAssetsPaths": false,
+      "inlineAssets": true
+    },
+    "theming": {
+      "customColor": false,
+      "color": "#007aff",
+      "darkTheme": false,
+      "iconFonts": true,
+      "fillBars": false
+    },
+    "customBuild": false
+  },
+  "scripts": {
+    "build-dev": "cross-env NODE_ENV=development node ./build/build.js",
+    "build-prod": "cross-env NODE_ENV=production node ./build/build.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.config.js",
+    "start": "npm run dev",
+    "postinstall": "cpy './node_modules/framework7-icons/fonts/*.*' './src/fonts/'"
+  },
+  "browserslist": [
+    "Android >= 5",
+    "IOS >= 9.3",
+    "Edge >= 15",
+    "Safari >= 9.1",
+    "Chrome >= 49",
+    "Firefox >= 31",
+    "Samsung >= 5"
+  ],
+  "dependencies": {
+    "dom7": "^2.1.3",
+    "firebase": "^6.3.5",
+    "framework7": "^4.4.10",
+    "framework7-icons": "^2.3.1",
+    "framework7-vue": "^4.4.10",
+    "template7": "^1.4.2",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-vue-jsx": "^4.0.1",
+    "chalk": "^2.4.2",
+    "copy-webpack-plugin": "^5.0.4",
+    "cpy-cli": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "ora": "^3.4.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^2.6.3",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^1.4.1",
+    "url-loader": "^2.1.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
