@@ -87,6 +87,6 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^5.0.4"
   }
 }
