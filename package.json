@@ -68,7 +68,7 @@
     "babel-plugin-transform-vue-jsx": "^4.0.1",
     "chalk": "^2.4.2",
     "copy-webpack-plugin": "^5.0.4",
-    "cpy-cli": "^2.0.0",
+    "cpy-cli": "^5.0.0",
     "cross-env": "^5.2.0",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
@@ -85,8 +85,8 @@
     "vue-loader": "^15.7.1",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.3"
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
